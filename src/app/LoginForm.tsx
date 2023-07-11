@@ -12,6 +12,8 @@ export default function LoginForm() {
 
   async function handleSubmit(e: any) {
     e.preventDefault();
+
+    console.log("e")
     const response = await fetch('/api/login', {
       method: 'POST',
       body: JSON.stringify({
